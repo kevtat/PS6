@@ -83,7 +83,7 @@ server <- function (session,input, output) {
       geom_col(col=input$color) +
       labs(x="Country", y="Population", title=paste0("Countries with the least amount of population:  ", input$contient)) +
       coord_flip()
-  })
+    })
     output$info <- renderTable({
       filtered <- data %>% filter(Continent == input$continent2) %>%
         select(Country,Continent,population_2022,Growth_Rate)
