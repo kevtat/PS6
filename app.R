@@ -9,7 +9,7 @@ ui <- navbarPage("World Population",
                  tabPanel("Overview",
                           p("This app uses world population data from the " ,
                             em("UN and US census"),
-                            p("The data set contains ", strong(nrow(df)), "rows and  ", strong(ncol(df)), "cols"),
+                            p("The data set contains ", strong(nrow(data)), "rows and  ", strong(ncol(data)), "cols"),
                           ),
                           p("Here is a small random sample dataset: "),
                           mainPanel(
